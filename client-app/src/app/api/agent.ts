@@ -33,7 +33,6 @@ axios.interceptors.response.use(
           }
           throw modelStateErrors.flat();
         } else {
-          console.log(error);
           toast.error(data);
         }
         break;
